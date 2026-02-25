@@ -31,9 +31,11 @@ struct stQuizz{
 short DecideHowManyQuestions(){
 
    short questions;
-   cout<<"How many questions you want to answer ? : \n";
+   do{
+    cout<<"How many questions you want to answer from 1 to 10 ? : \n";
    cin>>questions;
    cout<<endl;
+   }while(questions>10||questions<1);
    return questions;
 }
 
